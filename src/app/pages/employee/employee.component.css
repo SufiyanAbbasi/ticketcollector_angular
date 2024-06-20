@@ -1,0 +1,120 @@
+/* body.custom-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+}
+
+.custom-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.custom-card-header {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #dee2e6;
+    color: #fff;
+    background-color: #28a745 !important;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.custom-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.custom-btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.custom-btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.custom-btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.custom-btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.custom-label {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.custom-input,
+.custom-select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.custom-input[type="radio"] {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.custom-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-col-12,
+.custom-col-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.custom-col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.custom-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.custom-text-center {
+    text-align: center;
+}
+
+.custom-pt-3 {
+    padding-top: 1rem !important;
+}
+
+ */
