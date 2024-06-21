@@ -68,17 +68,17 @@
                 <div class="row">
                     <div class="col-12">
                         <label for="">Employee Name</label>
-                        <input [(ngModel)]="newObj.employeeName" type="text">
+                        <input [(ngModel)]="newObj.employeeName" class="ms-4" type="text" >
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Contact No</label>
-                        <input [(ngModel)]="newObj.contactNo" type="text">
+                        <input [(ngModel)]="newObj.contactNo" class="ms-4" type="text">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Email</label>
-                        <input [(ngModel)]="newObj.emailId" type="text">
+                        <input [(ngModel)]="newObj.emailId" class="ms-4" type="text">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Department</label>
                         <select class="form-select" [(ngModel)]="newObj.deptId">
                             @for(item of deptList; track $index){
@@ -86,7 +86,7 @@
                             }
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Role</label>
                         <select class="form-select" [(ngModel)]="newObj.role">
                             @for(item of roleList; track $index){
@@ -94,29 +94,27 @@
                             }
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Gender</label>
-                        <input [(ngModel)]="newObj.gender " type="radio" name="gender" value="Male">Male
-                        <input [(ngModel)]="newObj.gender " type="radio" name="gender" value="Female">Female
+                        <input [(ngModel)]="newObj.gender " type="radio" class="ms-2" name="gender" value="Male">Male
+                        <input [(ngModel)]="newObj.gender " type="radio"  class="ms-4" name="gender" value="Female">Female
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="">Password</label>
-                        <input [(ngModel)]="newObj.password" type="password">
+                        <input [(ngModel)]="newObj.password" class="ms-4" type="password">
                     </div>
                 </div>
 
                 <div class="row pt-3">
-                    <div class="col-6 text-center">
+                    <div class="col-6 ">
                         <button class="btn btn-secondary">Reset</button>
-
                     </div>
 
-                    <div class="col-6 text-center">
+                    <div class="col-6 ">
                         @if(this.newObj.employeeId == 0){
                         <button class="btn btn-success" (click)="save()">Save Dept</button>
                         }@else(){
                         <button class="btn btn-warning" (click)="update()">Update Category</button>
-
                         }
                     </div>
                 </div>

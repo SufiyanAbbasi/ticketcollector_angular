@@ -1,1 +1,62 @@
-<p>new-ticket works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-success">
+                New Ticket
+            </div>
+
+            <div class="card-body">
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="">Select Severity</label>
+                        <select [(ngModel)]="newticketObj.severity"  class="form-select">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="">Department</label>
+                        <select  [(ngModel)]="newticketObj.deptId"  class="form-select">
+                            @for(item of deptList; track $index){
+                                <option [value] = "item.deptId" >{{item.deptName}}</option>   
+                            }                       
+                        </select>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-3">
+                            <label for="">Select Parent Category</label>
+                            <select  class="form-select" [(ngModel)]="selectPCategory" (change)="onCategoryChange()">
+                                @for(item of pCategoryList; track $index){
+                                    <option [value] = "item.categoryName" >{{item.categoryName}}</option>   
+                                }                         
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="">Select Child Category</label>
+                            <select  [(ngModel)]="newticketObj.childCategoryId"  class="form-select">
+                                @for(item of cCategoryList; track $index){
+                                    <option [value] = "item.categoryId" >{{item.categoryName}}</option>   
+                                }                    
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <label for="">Ticket Details</label>
+                            <textarea  [(ngModel)]="newticketObj.requestDetails" class="form-control" name="" id=""></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <button class="btn btn-success" (click)="onCreateTicket()">Create Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

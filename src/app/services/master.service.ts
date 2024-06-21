@@ -85,5 +85,24 @@ export class MasterService {
   }
 
 
+  newTicket(obj:any) {
+    return this.http.post(`${this.apiUrl}CreateNewTicket`, obj)
+  }
+
+  getTicketsCreatedByLoggedEmp(empId: number) {
+    return this.http.get(`${this.apiUrl}GetTicketsCreatedByEmpId?empId=${empId}`)
+  }
+
+  getTicketAssignedToEmp(empId: number) {
+    return this.http.get(`${this.apiUrl}GetAssignedTicketsByEmpId?empId=${empId}`)
+  }
+
+  startTicket(ticketId: number) {
+    return this.http.post(`${this.apiUrl}startTicket?id=${ticketId}`,{});
+  }
+  
+  closeTicket(ticketId: number) {
+    return this.http.post(`${this.apiUrl}closeTicket?id=${ticketId}`,{});
+  }
 
 }
